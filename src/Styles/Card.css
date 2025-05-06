@@ -1,0 +1,271 @@
+.card-react {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-image: linear-gradient(to bottom, rgb(44, 189, 233) , rgb(0, 0, 0));
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px rgb(44, 189, 233) ;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-react svg {
+  width: 48px;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-react:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #000000;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-react:hover .card__content {
+  transform: rotateX(0deg);
+}
+
+.card__title {
+  margin: 0;
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.card-react:hover svg {
+  scale: 0;
+}
+
+.card__description {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
+}
+.card-java {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-image: linear-gradient(to bottom, rgb(243, 90, 2) , rgb(0, 0, 0));
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px rgb(243, 90, 2);
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.card-java svg {
+  width: 48px;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-java:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+.card-java:hover .card__content {
+  transform: rotateX(0deg);
+}
+.card-java:hover svg {
+  scale: 0;
+}
+.card-spring {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-image: linear-gradient(to bottom, rgb(128, 211, 20) , rgb(0, 0, 0));
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px rgb(128, 211, 20);
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.card-spring svg {
+  width: 48px;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-spring:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+.card-spring:hover .card__content {
+  transform: rotateX(0deg);
+}
+.card-spring:hover svg {
+  scale: 0;
+}
+.card-js {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-image: linear-gradient(to bottom, rgb(236, 221, 12) , rgb(0, 0, 0));
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px rgb(236, 221, 12);
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.card-js svg {
+  width: 48px;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-js:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+.card-js:hover .card__content {
+  transform: rotateX(0deg);
+}
+.card-js:hover svg {
+  scale: 0;
+}
+.card-ts {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-image: linear-gradient(to bottom, rgb(28, 216, 91) , rgb(0, 0, 0));
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px rgb(28, 216, 91);
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.card-ts svg {
+  width: 48px;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-ts:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+.card-ts:hover .card__content {
+  transform: rotateX(0deg);
+}
+.card-ts:hover svg {
+  scale: 0;
+}
+.card-ds {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-image: linear-gradient(to bottom, rgba(209, 23, 54, 0.712) , rgb(0, 0, 0));
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px rgba(209, 23, 54, 0.712);
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.card-ds svg {
+  width: 48px;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-ds:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+.card-ds:hover .card__content {
+  transform: rotateX(0deg);
+}
+.card-ds:hover svg {
+  scale: 0;
+}
+.card-ml {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-image: linear-gradient(to bottom, rgb(209, 144, 23) , rgb(0, 0, 0));
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px rgb(209, 144, 23);
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.card-ml svg {
+  width: 48px;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-ml:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+.card-ml:hover .card__content {
+  transform: rotateX(0deg);
+}
+.card-ml:hover svg {
+  scale: 0;
+}
+.card {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-image: linear-gradient(to bottom, rgb(209, 144, 23) , rgb(0, 0, 0));
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #ffffff80;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.card svg {
+  width: 48px;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+.card:hover .card__content {
+  transform: rotateX(0deg);
+}
+.card:hover svg {
+  scale: 0;
+}

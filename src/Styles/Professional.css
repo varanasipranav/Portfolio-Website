@@ -1,0 +1,58 @@
+.Techstack{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.Secondline-Techstack{
+    margin-top: 70px;
+    display: flex;
+    gap: 43px;
+    flex-wrap: wrap;
+
+
+
+}
+
+.Projects {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px;
+    background: #000000;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Projects h3 {
+    font-family: 'Sixtyfour Convergence', sans-serif;
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+}
+
+.Projects p {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #5f5959;
+    margin: 10px 0;
+}
+
+.Projects button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+    color: white;
+    justify-content: right;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.Projects button:hover {
+    background-color: #45a049;
+}
+
