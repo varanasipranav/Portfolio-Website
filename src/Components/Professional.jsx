@@ -3,6 +3,7 @@ import Header from "./header";
 import '../Styles/Professional.css';
 import Experience from "./Experience";
 import { TypeAnimation } from "react-type-animation";
+import Resume from "./Resume";
 
 export default function Professional() {
     return (
@@ -57,6 +58,10 @@ export default function Professional() {
                     <p>Implemented volume control using hand gesture detection with a camera. Platform: Python. Libraries: OpenCV, pycaw, Mediapipe, Numpy.</p>
                     <button onClick={() => window.open("https://github.com/your-volume-control", "_blank")}>View on GitHub</button>
                 </div>
+                <h1 style={{ fontFamily: "Sixtyfour Convergence", textAlign: "center" }}>Resume</h1>               
+                <Resume/>
+
+                <br />
             </div>
         </>
     );

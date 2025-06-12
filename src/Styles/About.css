@@ -1,39 +1,63 @@
 /* About.css */
 
+body {
+
+    color: whitesmoke;
+}
 .about-container {
-    background: linear-gradient(135deg, #bb2747, #000000);
+    background: #000000;
     min-height: 100vh;
     color: whitesmoke;
     font-family: 'sans-serif';
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     padding: 2rem;
     box-sizing: border-box;
 }
-
+.handle-list{
+ display: flex;
+ flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.handle-list li{
+    margin: 0.5rem 1rem;
+    list-style: none;
+}
+.handle-list li a {
+    display: inline-flex;
+ align-items: center;
+ text-decoration: none;
+    color: whitesmoke;
+ padding: 0.5rem 1rem;
+ border: 1px solid whitesmoke;
+ border-radius: 5px;
+    margin-right: 10px;
+ transition: background-color 0.3s ease, color 0.3s ease;
+}
+.handle-list li a svg {
+ margin-right: 8px; 
+}
+.handle-list li a:hover {
+    background-color: rgba(255, 255, 255, 0.1); 
+}
 .about-title {
     font-size: 3rem;
     font-weight: bold;
+ margin-bottom: 2rem;
+    font-weight: bold;
     margin-bottom: 2rem;
     text-shadow: 2px 2px 8px #000;
-    text-align: center;
-}
-
-.about-content {
-    max-width: 1000px;
-    line-height: 1.8;
-    text-align: left;
-}
-
-.about-animation {
     font-size: 2rem;
-    text-align: center;
+ margin-bottom: 2rem;
     margin-bottom: 2rem;
     color: #ffd700;
 }
 
 .about-content ul {
+ text-align: left;
     list-style: none;
     padding-left: 0;
 }
@@ -45,16 +69,16 @@
     align-items: center;
 }
 
+
 .about-content p {
     margin-bottom: 1.5rem;
 }
 
-.about-content li::before {
+.intrest-list li::before {
     content: '▶';
     margin-right: 0.8rem;
     color: #00e676;
 }
-
 @media (max-width: 768px) {
     .about-title {
         font-size: 2.5rem;
@@ -68,3 +92,28 @@
         font-size: 1rem;
     }
 }
+
+.about-animation {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #ffd700;
+}
+.handle-list li a svg.feather-github {
+ color: #ffffff; /* White for GitHub in dark mode */
+}
+
+.handle-list li a svg.feather-linkedin {
+ color: #0a66c2; /* LinkedIn blue */
+}
+
+.handle-list li a svg.feather-instagram {
+ color: #c13584; /* Instagram gradient-like color */
+}
+.handle-list li a svg.feather-youtube {
+ color: #ff0000; /* YouTube red */
+}
+.handle-list li a svg.feather-reddit {
+ color: #ff4500; /* Reddit orange-red */
+}
+

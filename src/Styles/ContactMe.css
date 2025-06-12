@@ -2,23 +2,24 @@
     max-width: 800px;
     margin: 40px auto;
     padding: 20px;
-    background: #f9f9f9;
+ background: #000000;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* White shadow for dark background */
+ color: #333; /* Set text color for the container */
     text-align: center;
 }
 
 .contact-container h1 {
     font-family: 'Sixtyfour Convergence', sans-serif;
     font-size: 36px;
-    color: #333;
+ color: whitesmoke; /* White text for dark background */
     margin-bottom: 20px;
 }
 
 .contact-info p {
     font-family: Arial, sans-serif;
     font-size: 18px;
-    color: #555;
+ color: whitesmoke; /* White text for dark background */
     margin: 10px 0;
 }
 
@@ -27,5 +28,60 @@ iframe {
     height: 450px;
     border-radius: 8px;
     margin-top: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); /* White shadow for dark background */
+}
+
+/* Form Styling */
+.contact-form {
+ margin-top: 30px;
+    text-align: left; /* Align form elements to the left */
+}
+
+.contact-form h2 {
+    font-family: 'Sixtyfour Convergence', sans-serif;
+    font-size: 28px;
+ color: whitesmoke; /* White text for dark background */
+    margin-bottom: 20px;
+    text-align: center; /* Center the form title */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block; /* Make label a block element for better spacing */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+ color: whitesmoke; /* White text for dark background */
+    margin-bottom: 8px;
+ font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: calc(100% - 22px); /* Adjust width to account for padding and border */
+    padding: 10px;
+    border: 1px solid #555; /* Darker border for dark background */
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.contact-form button[type="submit"] {
+    display: block; /* Make button a block element */
+    width: 100%; /* Make button full width */
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #0056b3;
 }

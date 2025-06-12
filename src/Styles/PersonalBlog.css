@@ -1,0 +1,32 @@
+/* Styles for the PersonalBlog component */
+
+/* Styling for the main heading */
+.personal-blog-heading {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #FFFFFF; /* Assuming a dark background */
+    font-size: 2.5em;
+}
+
+/* Container for the blog posts */
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 3 columns, adjusting width */
+    gap: 20px; /* Spacing between posts */
+    padding: 0 20px; /* Add some horizontal padding */
+    max-width: 1200px; /* Optional: Limit the maximum width of the container */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Ensure each post takes equal space */
+.blog-container .post-container {
+    width: 100%;
+}
+
+/* Adjustments for smaller screens if needed */
+@media (max-width: 992px) { /* Adjust breakpoint as needed */
+    .blog-container {
+        grid-template-columns: 1fr; /* Stack posts on small screens */
+    }
+}
