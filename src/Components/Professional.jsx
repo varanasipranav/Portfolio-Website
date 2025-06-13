@@ -39,23 +39,25 @@ export default function Professional() {
                 <div className="Projects">
                     <h3>Personal Portfolio Website</h3>
                     <p>A responsive personal portfolio built with React.js, using Material-UI, Bootstrap UI, and UI Verse for a sleek design.</p>
-                    <button onClick={() => window.open("https://github.com/your-portfolio", "_blank")}>View on GitHub</button>
-
+                    <button onClick={() => window.open("https://github.com/varanasipranav/Portfolio-Website", "_blank")}>View on GitHub</button>
+                    <h3>Comparision of Association Rule Mining Algorithm</h3>
+                    <p>This project deals with the comprision of two famous Association rule mining alogorithms: Apriori and FP Growth</p>
+                    <button onClick={() => window.open("https://github.com/varanasipranav/Comparision_of_Association_rule_mining_algorithms", "_blank")}>View on GitHub</button>
                     <h3>Social Media Platform</h3>
                     <p>A dynamic social media platform built with React.js and Spring Boot. Users can join groups, connect with people, and share posts within respective groups. Developed with Spring Boot and JPA for efficient data handling, providing endpoints for user authentication, group management, and post handling.</p>
-                    <button onClick={() => window.open("https://github.com/your-social-media", "_blank")}>View on GitHub</button>
+                    <button>Undergoing project</button>
 
                     <h3>Face Recognition Using Siamese Neural Network</h3>
                     <p>Implemented a one-shot face recognition system using a Siamese Neural Network. Utilized OpenCV to create a custom dataset for accurate and efficient facial recognition. Platform: Jupyter Notebook. Libraries: TensorFlow, OpenCV, Numpy.</p>
-                    <button onClick={() => window.open("https://github.com/your-face-recognition", "_blank")}>View on GitHub</button>
+                    <button onClick={() => window.open("https://github.com/varanasipranav/Facial_Comparision_using_siamese_neural_network", "_blank")}>View on GitHub</button>
 
                     <h3>Mask Recognition Using CNN</h3>
                     <p>A binary classification model using a Convolutional Neural Network (CNN) to classify whether a person is wearing a mask. Platform: Jupyter Notebook. Libraries: TensorFlow, Keras, Numpy, Matplotlib.</p>
-                    <button onClick={() => window.open("https://github.com/your-mask-recognition", "_blank")}>View on GitHub</button>
+                    <button onClick={() => window.open("https://github.com/varanasipranav/Facemask_Recognition_Using_Convolutional_Nueral_Network", "_blank")}>View on GitHub</button>
 
                     <h3>Volume Control with Gesture Detection</h3>
                     <p>Implemented volume control using hand gesture detection with a camera. Platform: Python. Libraries: OpenCV, pycaw, Mediapipe, Numpy.</p>
-                    <button onClick={() => window.open("https://github.com/your-volume-control", "_blank")}>View on GitHub</button>
+                    <button onClick={() => window.open("https://github.com/varanasipranav/Volume-Control-with-Gesture-Detection", "_blank")}>View on GitHub</button>
                 </div>
 
 

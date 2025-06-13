@@ -1,7 +1,7 @@
 const fakePosts = [
     {
         image: 'https://via.placeholder.com/600x400',
-        heading: 'First Post Heading',
+        heading: 'Dont Join TCS if you are a Fresher',
         date: 'October 26, 2023',
         content: 'This is the content of the first blog post. It contains some interesting information and insights.'
     },

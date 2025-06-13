@@ -28,9 +28,9 @@ export default function ContactMe() {
             
             <h1>Contact Me</h1>
             <div className="contact-info">
-                <p><strong>Name:</strong>Varanasi Pranav</p>
-                <p><strong>Email:</strong>varanasi.saipranav@gmail.com</p>
-                <p><strong>Location:</strong> benguluru, India</p>
+                <p><strong>Name: </strong>Varanasi Pranav</p>
+                <p><strong>Email: </strong>varanasi.saipranav@gmail.com</p>
+                <p><strong>Location: </strong> Benguluru, India</p>
             </div>
             <div className="contact-form">
                 <h2>Send me a message</h2>

@@ -2,11 +2,12 @@
     max-width: 800px;
     margin: 40px auto;
     padding: 20px;
- background: #000000;
+    background: linear-gradient(145deg, #1a1a1a, #000000); /* Gradient background */
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* White shadow for dark background */
- color: #333; /* Set text color for the container */
+    color: #e0e0e0; /* Lighter text color for dark background */
     text-align: center;
+    animation: fadeIn 1s ease-out; /* Add fade-in animation */
 }
 
 .contact-container h1 {
@@ -17,18 +18,18 @@
 }
 
 .contact-info p {
-    font-family: Arial, sans-serif;
-    font-size: 18px;
- color: whitesmoke; /* White text for dark background */
+ font-family: 'Open Sans', sans-serif;
+ font-size: 16px;
+    color: #cccccc; /* Slightly lighter text for info */
     margin: 10px 0;
 }
 
 iframe {
     width: 100%;
     height: 450px;
-    border-radius: 8px;
+    border-radius: 8px;c 
     margin-top: 20px;
- box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); /* White shadow for dark background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Darker shadow for contrast */
 }
 
 /* Form Styling */
@@ -53,7 +54,7 @@ iframe {
     display: block; /* Make label a block element for better spacing */
     font-family: Arial, sans-serif;
     font-size: 16px;
- color: whitesmoke; /* White text for dark background */
+    color: #e0e0e0; /* Lighter label text */
     margin-bottom: 8px;
  font-weight: bold;
 }
@@ -64,10 +65,13 @@ iframe {
     width: calc(100% - 22px); /* Adjust width to account for padding and border */
     padding: 10px;
     border: 1px solid #555; /* Darker border for dark background */
-    border-radius: 5px;
+    border-radius: 8px; /* More rounded corners */
     font-family: Arial, sans-serif;
     font-size: 16px;
+    background-color: #333333; /* Darker input background */
+    color: #e0e0e0; /* Lighter input text */
 }
+
 
 .contact-form button[type="submit"] {
     display: block; /* Make button a block element */
@@ -75,13 +79,25 @@ iframe {
     padding: 12px;
     background-color: #007bff;
     color: white;
-    border: none;
-    border-radius: 5px;
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Match input border-radius */
     cursor: pointer;
     font-size: 18px;
     transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 123, 255, 0.3); /* Shadow for the button */
 }
 
 .contact-form button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Darker blue on hover */
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.4); /* Enhanced shadow on hover */
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+ from {
+        opacity: 0;
+    }
+ to {
+ opacity: 1;
+    }
 }
