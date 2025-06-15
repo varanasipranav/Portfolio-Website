@@ -7,21 +7,25 @@ export default function Experience(){
     const [secondline,setSecondline]=useState(false)
     const [thirdline,setThirdLine]=useState(false);
     const [fourthline, setFourthLine]=useState(false);
-        var myDate = new Date();
+       var myDate = new Date();
         var pastDate = new Date('2024-07-25')
-        let years=myDate.getFullYear()-pastDate.getFullYear();
-        let months=myDate.getMonth()-pastDate.getMonth();
-        let days= myDate.getDate()-pastDate.getDate();
+        
+        let years = myDate.getFullYear() - pastDate.getFullYear();
+        let months = myDate.getMonth() - pastDate.getMonth();
+        let days = myDate.getDate() - pastDate.getDate();
 
         if(months<0){
             years--;
             months=months+12;
         }
 
-        if(days<0){
-            const previousMonth=new Date(myDate.getFullYear(),myDate.getMonth(),0);
-            days+=previousMonth.getDate();
+        // Adjust months and days if the current day is before the past date's day
+        if (days < 0) {
+            months--; // Subtract a month
+            const daysInPreviousMonth = new Date(myDate.getFullYear(), myDate.getMonth(), 0).getDate();
+            days += daysInPreviousMonth; // Add the number of days in the previous month
         }
+
         
 
     return(
