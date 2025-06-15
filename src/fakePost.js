@@ -1,8 +1,8 @@
-import post1Image from '/home/user/Portfolio-Website/src/Assets/post1.png';
+import post1 from './Assets/post1.png';
 
 const fakePosts = [
     {
-        image: post1Image,
+        image: post1,
         heading: 'Dont Join TCS if you are a Fresher',
         date: 'May 13, 2025',
         url: 'https://medium.com/@varanasi.saipranav/dont-join-tcs-as-a-fresher-4be5f8fc1991',
