@@ -30,12 +30,13 @@
     font-weight: 400; /* Normal font weight */
   }
   
-  .post-image {
-    width: 100%; /* Makes the image take the full width of the container */
-    height: auto; /* Maintains the aspect ratio of the image */
+  .post-imag {
     display: block; /* Removes any extra space below the image */
+    width: 100%; /* Set width to 100% of the container */
+    height: 300px; /* Set a fixed height to make it square (adjust as needed) */
+    margin: 0 auto; /* Centers the image if it's smaller than the container width */
+    object-fit: cover; /* Crop the image to cover the square area */
   }
-  
   .post-container p {
     padding: 12px 16px; /* Padding for the content/caption */
     font-size: 14px; /* Font size for the content */

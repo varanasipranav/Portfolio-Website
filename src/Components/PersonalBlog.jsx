@@ -12,10 +12,7 @@ export default function PersonalBlog(){
                 {fakePosts.map((post) => (
                     <Post
                         key={post.id}
-                        image={post.image}
-                        heading={post.heading}
-                        date={post.date}
-                        content={post.content}
+                        post={post} 
                     />
                 ))}
             </div>

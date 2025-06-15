@@ -2,7 +2,6 @@ import '../Styles/Landing.css'
 import { TypeAnimation } from 'react-type-animation';
 import Pacman from './Pacman';
 import Header from './header';
-import Image from './Image';
 import profilePic from '../Assets/Profile.jpeg'; // Import the profile image
 import Footer from './Footer';
 

@@ -1,8 +1,11 @@
 import '../Styles/Post.css'
-export default function Post(post){
+export default function Post({ post }){ // Destructure the 'post' prop
+    function handleurl(){
+        window.open(post.url, '_blank');
+    }
     return(
-                <div className="post-container">
-
+                <div className="post-container" onClick={handleurl}>
+ 
 
 
                     <div className="post-header">
@@ -13,7 +16,7 @@ export default function Post(post){
         
                     </div>
         
-                    <img src={post.image} alt={post.heading} className="post-image"/>
+                    <img src={post.image} alt={post.heading} className="post-imag"/>
         
                     <p>{post.content}</p>
         

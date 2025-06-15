@@ -18,6 +18,9 @@ export default function Header(){
     function handleContact(){
         navigate('/contact')
     }
+    function handleresume(){
+        navigate('/resume');
+    }
     
     return(
         <>
@@ -26,6 +29,7 @@ export default function Header(){
         <button onClick={handleAbout}>About Me</button>
         <button onClick={handlePro}>Tech Stack</button>
         <button onClick={handleper}>Blog</button>
+        <button onClick={handleresume}>Resume</button>
         <button onClick={handleContact}>Contact Me!</button>
         </div>
         </>
