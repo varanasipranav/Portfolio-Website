@@ -1,6 +1,7 @@
 import '../Styles/ContactMe.css'
 import Header from './header'
 import { useState } from 'react';
+import Footer from './Footer';
 
 export default function ContactMe() {
     const [formData, setFormData] = useState({
@@ -51,6 +52,7 @@ export default function ContactMe() {
                 </form>
             </div>
         </div>
+        <Footer/>
         </>
     );
 }

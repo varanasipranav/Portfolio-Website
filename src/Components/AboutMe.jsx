@@ -4,6 +4,7 @@ import Header from "./header";
 import "../Styles/About.css";
 import { TypeAnimation } from "react-type-animation";
 import { useEffect, useRef } from "react";
+import Footer from "./Footer";
 
 import profilePic from "../Assets/Profile.jpeg"; // Make sure you have a profile picture in this location
 
@@ -144,6 +145,7 @@ export default function About() {
         </div>
       </div>
     </div>
+    <Footer />
     </>
   );
 }

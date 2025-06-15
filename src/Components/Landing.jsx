@@ -4,6 +4,7 @@ import Pacman from './Pacman';
 import Header from './header';
 import Image from './Image';
 import profilePic from '../Assets/Profile.jpeg'; // Import the profile image
+import Footer from './Footer';
 
 export default function Landing(){
  return(
@@ -87,7 +88,7 @@ export default function Landing(){
     </div> {/* End of Landing-content div */}
  {/* Add the image */}
  </div>
- 
+ <Footer/>
         </>
     )
 

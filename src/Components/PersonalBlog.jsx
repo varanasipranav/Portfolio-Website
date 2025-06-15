@@ -2,6 +2,7 @@ import Header from "./header";
 import {fakePosts} from '../fakePost'
 import Post from "./Post";
 import '../Styles/PersonalBlog.css'
+import Footer from './Footer'
 export default function PersonalBlog(){
     return(
         <>
@@ -18,6 +19,7 @@ export default function PersonalBlog(){
                     />
                 ))}
             </div>
+            <Footer/>
         </>
     )
 }
