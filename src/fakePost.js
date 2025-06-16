@@ -7,7 +7,7 @@ const fakePosts = [
         date: 'May 13, 2025',
         url: 'https://medium.com/@varanasi.saipranav/dont-join-tcs-as-a-fresher-4be5f8fc1991',
         content: 'Hey This is a Medium post and it contains a story of a TCS Fresher.'
-    }
+    },
     {
         image: post2,
         heading: 'Optimal Cup of Coffee.',
