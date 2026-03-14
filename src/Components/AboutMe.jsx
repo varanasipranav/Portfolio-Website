@@ -29,7 +29,7 @@ export default function About() {
           <div className="description">
             <h2>Intro & Early Life</h2>
             <p>
-              I was born in Visakhapatnam, India on October 10, 2002. Known as the "City of Destiny," Visakhapatnam boasts some of the best beaches on India's east coast. While I wasn't initially a standout student, I gradually developed a keen interest in academics. During my schooling, I actively participated in sports like cricket, volleyball, and badminton. I even competed in the inter-school shotput competition. I also cultivated a strong passion for singing and lyric writing during this time.
+              I was born in Hyderabad, India on October 10, 2002. Known as the "City of Destiny," Visakhapatnam boasts some of the best beaches on India's east coast. While I wasn't initially a standout student, I gradually developed a keen interest in academics. During my schooling, I actively participated in sports like cricket, volleyball, and badminton. I even competed in the inter-school shotput competition. I also cultivated a strong passion for singing and lyric writing during this time.
             </p>
 
             <h2>Education</h2>
