@@ -1,0 +1,62 @@
+# Copy this to your Portfolio-Website repo at:  .github/workflows/deploy.yml
+#
+# It builds the CRA app on GitHub's runner, then ships only the build/ output
+# to the EC2 box and reloads nginx.
+#
+# Required repo secrets (Settings > Secrets and variables > Actions):
+#   SSH_PRIVATE_KEY  - the ci_deploy private key (full text, incl. BEGIN/END lines)
+#   SERVER_HOST      - 3.233.142.171   (the Elastic IP)
+#   SERVER_USER      - ubuntu
+
+name: Deploy to EC2
+
+on:
+  push:
+    branches: [master]      # your repo's default branch
+  workflow_dispatch:        # lets you trigger it manually from the Actions tab
+
+# Never let two deploys run at once; a newer push supersedes an in-flight one.
+concurrency:
+  group: deploy-production
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm            # caches ~/.npm between runs -> faster installs
+
+      - name: Install dependencies
+        run: npm ci             # clean, lockfile-exact install
+
+      - name: Build
+        run: npm run build
+        env:
+          CI: false             # CRA treats eslint warnings as errors when CI=true
+
+      - name: Configure SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -H "${{ secrets.SERVER_HOST }}" >> ~/.ssh/known_hosts
+
+      - name: Ship build/ to server
+        run: |
+          rsync -avz --delete \
+            -e "ssh -i ~/.ssh/deploy_key -o IdentitiesOnly=yes" \
+            build/ "${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:/var/www/react-app/"
+
+      - name: Reload NGINX
+        run: |
+          ssh -i ~/.ssh/deploy_key -o IdentitiesOnly=yes \
+            "${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}" \
+            "sudo systemctl reload nginx && echo 'deployed:' \$(date -u)"
